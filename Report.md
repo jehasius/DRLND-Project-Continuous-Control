@@ -52,7 +52,7 @@ Machine learning, is a branch of artificial intelligence, focuses on learning pa
 To set up and run the environment please follow the generell instructions in the [README.md](./README.md) and jupyter notebook [Continuous_Control.ipynb](./Continuous_Control.ipynb). The Jupyter notebook also contains the whole project algorithms.
 
 <a name="algo"></a>
-## 3. Learning Algoritm
+## 3. Learning Algorithm
 The used DDPG - Deep Deterministic Policy Gradient algorithm is an algorithm that was introduced as an "Actor-Critic" method that can be used in the context of continuous action spaces. DDPG is a different kind of actor-critic method, it could be seen as approximate DQN, instead of an actual actor critic. The reason for this is that the critic in DDPG, is used to approximate the maximizer over the Q values of the next state, and not as a learned baseline. The algorithm uses two networks, one for the policy to map states to actions and one for a critic to map state and action pairs as Q-values.
 
 ### 3.1. Network Architecture
