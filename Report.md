@@ -11,8 +11,9 @@
 
 [//]: # (Image References)
 [image1]: ./pictures/score_episode.png "Score over Episode"
-[image2]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
-[image3]: ./pictures/roboticarm.jpg
+[image2]: ./pictures/aftertraining.png "Trained Agent"
+[image3]: ./pictures/roboticarm.gif
+[image4]: ./pictures/beforetraining.png "Trained Agent"
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -23,7 +24,7 @@ In this environment, a double-jointed arm can move to target locations. A reward
 
 #### Real-World Robotics 
 Watch this [YouTube video](https://www.youtube.com/watch?v=ZVIxt2rt1_4) to see how some researchers were able to train a similar task on a real robot! The accompanying research paper can be found [here](https://arxiv.org/pdf/1803.07067.pdf).
-![alt text][image3]
+![robotic arm][image3]
 Training robotic arm to reach target locations in the real world. [(Source)](https://www.youtube.com/watch?v=ZVIxt2rt1_4)
 
 ### 1.2 The Observation Space
@@ -48,7 +49,7 @@ Machine learning, is a branch of artificial intelligence, focuses on learning pa
 
 <a name="start"></a>
 ## 2. Getting Started
-To set up and run the environment please follow the generell instructions in the [README.md](./README.md) and jupyter notebook [Navigation.ipynb](./Navigation.ipynb). The Jupyter notebook also contains the whole project algorithms.
+To set up and run the environment please follow the generell instructions in the [README.md](./README.md) and jupyter notebook [Continuous_Control.ipynb](./Continuous_Control.ipynb). The Jupyter notebook also contains the whole project algorithms.
 
 <a name="algo"></a>
 ## 3. Learning Algoritm
@@ -90,7 +91,7 @@ LR_CRITIC = 2e-4        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
 ```
 ### 3.3 Build and train the DDPG algorithm
-The DDPG algorithm and trainig process was realized with an deep learning agent [ddpg_agent.py](./ddpg_agent.py), the model [model.py](./model.py) file and the [Navigation.ipynb](./Navigation.ipynb). The model parameter were saved can be accesed for further tests an explorations.
+The DDPG algorithm and trainig process was realized with an deep learning agent [ddpg_agent.py](./ddpg_agent.py), the model [model.py](./model.py) file and the [Continuous_Control.ipynb](./Continuous_Control.ipynb). The model parameter were saved can be accesed for further tests an explorations.
 
 
 <a name="plot"></a>
@@ -108,12 +109,16 @@ In the picture below you can see the approproate plot of the rewards during the 
 
 ## 5. Simulation<a name="sim"></a>
 The model was successfully trained and the agent was able to reach target locations.
+Picture of the Unity simulation - typical position of the robotic arm before the training. 
+![alt text][image4]  
 
+Picture of the Unity simulation - typical position of the robotic arm after the training. 
 ![alt text][image2]  
 
 <a name="future"></a>
 ## 6. Ideas for future work
 The alorithm is running quit well but we can try to tune hyper-parameters.
 Testing different network architecture that uses other network architectures.
-Solving the second option with 20 robotic arms with useful for algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience. 
+Solving the second option with 20 robotic arms with useful for algorithms like: 
+[PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience. 
 
