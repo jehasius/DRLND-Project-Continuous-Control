@@ -69,8 +69,8 @@ Please follow the [instructions in the DRLND GitHub repository](https://github.c
 
 2. Place the file in the DRLND GitHub repository, in the `p2_continuous-control/` folder, and unzip (or decompress) the file. 
 
-### Instructions
+### Solution in this repository
 
-Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!
+A report for the solved option 1 can be found here - [report of the solution with one agent using DDPG](/Report.md)
 
 The solution of the Reacher Environment with one agent using the DDPG - Deep Deterministic Policy Gradient algorithm can be found in the [jupyter notebook](/Continuous_Control.ipynb)
