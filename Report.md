@@ -97,11 +97,11 @@ The DDPG algorithm and trainig process was realized with an deep learning agent 
 <a name="plot"></a>
 ## 4. Plot of Rewards
 The task is episodic, and in order to solve the environment, your agent must get an average score of +30 over 100 consecutive episodes.
-The Environment was solved in Environment solved in 145 episodes with an average score of 30.43.
+The Environment was solved in Environment solved in 45 episodes with an average score of 30.43.
 ```python
 Episode 50 	Score: 3.18 	Average Score: 2.51
 Episode 100 	Score: 22.29 	Average Score: 11.01
-Environment solved in 145 episodes! Average score of 30.43
+Environment solved in 45 episodes! Average score of 30.43
 ```
 In the picture below you can see the approproate plot of the rewards during the training process as score over episodes.
 
